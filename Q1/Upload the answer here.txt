@@ -1,1 +1,22 @@
-Upload the answer here
+Lab10 Q1B
+import java.util.Scanner;
+
+public class Main {
+
+    public static void validateMark(int mark) {
+        assert mark >= 0 && mark <= 100 : "Invalid Mark";
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the mark: ");
+        int mark = sc.nextInt();
+
+        validateMark(mark);
+
+        System.out.println("Mark is Validated");
+
+        sc.close();
+    }
+}
